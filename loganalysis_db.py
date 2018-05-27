@@ -12,16 +12,17 @@ print("\n 1. The most popular articles of all time are:")
 print("-------------------------------------------------------------")
 
 
+# Function to retrieve data on most popular articles of all time
 def get_popular_articles():
 
-    db = psycopg2.connect(database=DBNAME)
+    db = psycopg2.connect(database=DBNAME)  # Connect to the database
     c = db.cursor()
     c.execute('''select articles.title, count(*) as views
               from articles,log
               where articles.slug = substring(log.path,10)
               group by articles.title
               order by views desc limit 3''')
-    ans1 = c.fetchall()
+    ans1 = c.fetchall()  # Fetch results
     db.close()
     return ans1
 
@@ -35,6 +36,7 @@ print("\n 2. The most popular authors of all time are:")
 print("-------------------------------------------------------------")
 
 
+# Function to retrieve data on most popular authors of all time
 def get_popular_authors():
 
     db = psycopg2.connect(database=DBNAME)
@@ -55,6 +57,7 @@ print("\n 3. Days on which more that 1% of requests led to errors:")
 print("-------------------------------------------------------------")
 
 
+# Function to find the days on which error percentage was greater than 1%
 def get_error_percentage():
     db = psycopg2.connect(database=DBNAME)
     c = db.cursor()
