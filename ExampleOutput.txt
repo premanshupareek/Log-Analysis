@@ -1,0 +1,23 @@
+-----------------------------------------------------------------------------------
+
+Internal Reporting Tool - Logs Analysis
+
+-----------------------------------------------------------------------------------
+
+
+ 1. The most popular articles of all time are:
+-----------------------------------------------------------------------------------
+* The article with title "Candidate is jerk, alleges rival" has 338647 views.
+* The article with title "Bears love berries, alleges bear" has 253801 views.
+* The article with title "Bad things gone, say good people" has 170098 views.
+
+ 2. The most popular authors of all time are:
+-----------------------------------------------------------------------------------
+* The author Ursula La Multa has 507594 views.
+* The author Rudolf von Treppenwitz has 423457 views.
+* The author Anonymous Contributor has 170098 views.
+* The author Markoff Chaney has 84557 views.
+
+ 3. Days on which more that 1% of requests led to errors:
+-----------------------------------------------------------------------------------
+* On 2016-07-17, 2.26% of requests led to errors.
